@@ -13,11 +13,13 @@ The process consists of three main steps:
 
 ## File Structure
 
-* **`intersecting_structure_generation.py` (Code S2):**
+* **`intersecting_structure_generation.py`:**
     * Contains the core functions: `ps_intersect` (generates the base grid) and `Path_fill` (densifies the points).
-* **`generate_pattern.py` (Code S1):**
+* **`generate_pattern.py`:**
     * The main execution script. It generates the base grid, applies the deformation formulas, visualizes the result, and exports the raw coordinate data (`original_points.txt`).
-* **`post_processing.py` (Code S3):**
+* **`generate_composite_pattern.py`:**
+    * An advanced execution script for Composite Deformations. It demonstrates how to merge multiple localized deformations into a single cohesive pattern using spatial weighting (alpha blending).
+* **`post_processing.py`:**
     * Reads the raw data, filters points to optimize spacing (min 0.1 mm), and exports the final coordinates (`final_points_filtered.txt`).
 
 ## Installation
